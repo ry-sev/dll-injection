@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DLL_Injection", "DLL_Injection\DLL_Injection.vcxproj", "{889202C8-F86D-41B3-9C68-74F7E9C5BD4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{889202C8-F86D-41B3-9C68-74F7E9C5BD4D}.Debug|x64.ActiveCfg = Debug|x64
+		{889202C8-F86D-41B3-9C68-74F7E9C5BD4D}.Debug|x64.Build.0 = Debug|x64
+		{889202C8-F86D-41B3-9C68-74F7E9C5BD4D}.Debug|x86.ActiveCfg = Debug|Win32
+		{889202C8-F86D-41B3-9C68-74F7E9C5BD4D}.Debug|x86.Build.0 = Debug|Win32
+		{889202C8-F86D-41B3-9C68-74F7E9C5BD4D}.Release|x64.ActiveCfg = Release|x64
+		{889202C8-F86D-41B3-9C68-74F7E9C5BD4D}.Release|x64.Build.0 = Release|x64
+		{889202C8-F86D-41B3-9C68-74F7E9C5BD4D}.Release|x86.ActiveCfg = Release|Win32
+		{889202C8-F86D-41B3-9C68-74F7E9C5BD4D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7B370BF-5C02-46A1-9A70-71F1D8F7FE88}
+	EndGlobalSection
+EndGlobal
