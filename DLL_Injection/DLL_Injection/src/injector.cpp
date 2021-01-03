@@ -191,12 +191,8 @@ BOOL InjectDLL(PCWSTR processName, PCWSTR dllPath)
 
 	WaitForSingleObject(hRemoteThread, INFINITE);
 
-	if (hProcess && lpRemoteMemory)
-	{
-		VirtualFreeEx(hProcess, (LPVOID)lpRemoteMemory, 0, MEM_RELEASE);
-		CloseHandle(hProcess);
-		return TRUE;
-	}
+	VirtualFreeEx(hProcess, (LPVOID)lpRemoteMemory, 0, MEM_RELEASE);
+	CloseHandle(hProcess);
 	
-	return FALSE;
+	return TRUE;
 }
