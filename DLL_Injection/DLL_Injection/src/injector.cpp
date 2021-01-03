@@ -197,8 +197,6 @@ BOOL InjectDLL(PCWSTR processName, PCWSTR dllPath)
 		CloseHandle(hProcess);
 		return TRUE;
 	}
-	else
-		return FALSE;
-
-	return TRUE;
+	
+	return FALSE;
 }
