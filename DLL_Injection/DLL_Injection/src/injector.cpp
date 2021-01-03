@@ -87,12 +87,15 @@ BOOL InjectDLL(PCWSTR processName, PCWSTR dllPath)
 
 	DWORD dwProcessID = FindProcessByName(processName);
 
-	if (dwProcessID != NULL)
-		LOG("[+] ", processName, " found. PID: ", dwProcessID);
-	else
+	if (dwProcessID == NULL)
+	{
 		LOG("[!] ", processName, " not found");
+		return FALSE;
+	}
 
+	LOG("[+] ", processName, " found. PID: ", dwProcessID);
 	LOG("[ ] checking if ", dllPath, " exists");
+
 	GetFullPathName(dllPath, MAX_PATH, dllFullPath, NULL);
 
 	if (_waccess_s(dllFullPath, 0) != 0)
